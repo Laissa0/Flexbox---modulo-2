@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self</title>
+    <style>
+
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid;
+            margin-bottom: 10px;
+            display: flex;
+            margin: 10px;
+            align-items: center;
+        }
+
+        .align.container{
+            align-items: center;
+        }
+
+        .item{
+            background-color: violet;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>ALIGN SELF</p>
+    <section class="flex-container">
+        <div class="item auto">A</div>
+        <div class="item auto">Aaaaaaaaa</div>
+        <div class="item auto">Abbbbb</div>
+        <div class="item auto">saadsdsA</div>
+        <div class="item auto">Acccc</div>
+
+    </section>
+
+    <p>ALIGN SELF center</p>
+    <section class="flex-container">
+        <div class="item stretch">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item end">A</div>
+
+    </section>
+
+    <p>ALIGN SELF start</p>
+    <section class="flex-container">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+
+    </section>
+
+    <p>ALIGN SELF end</p>
+    <section class="flex-container">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+
+    </section>
+
+    <p>ALIGN SELF baseline</p>
+    <section class="flex-container">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+
+    </section>
+
+    <p>ALIGN SELF stretch</p>
+    <section class="flex-container">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+
+    </section>
+
+    <p>ALIGN SELF auto</p>
+    <section class="flex-container">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+
+    </section>
+</body>
+</html>
